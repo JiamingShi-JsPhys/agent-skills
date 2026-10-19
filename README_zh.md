@@ -26,19 +26,21 @@
 3. **确定性安全**：为防止 AI 执行幻觉，每个技能都强制可验证、可回滚的操作与完整的审计日志。
 4. **触发即执行**：每个技能的 `SKILL.md` 以强制工作流开篇——命中适用范围的请求会让 Agent 直接运行工具并汇报结果，而不是只描述这个工具能做什么。
 
-## 七个技能
+## 九个技能
 
-目前有 7 个可安装技能，按功能分组如下。每一行链接到该技能的 `README.md`（本表是唯一总览；点进去是各技能的详细文档）。
+目前有 9 个可安装技能，按功能分组如下。每一行链接到该技能的 `README.md`（本表是唯一总览；点进去是各技能的详细文档）。
 
 | | 功能类别 | 技能 | 一句话说明 | 依赖库 |
 | :--- | :--- | :---: | :--- | :--- |
 | | **文件与项目管理** | [`task-organizer`](skills/task-organizer/README_zh.md) v1.0.1 | 把杂乱的任务文件夹整理成三段式结构，提供广播中心作为上下文压缩索引 | 标准库 |
 | | | [`document-evolution-tracker`](skills/document-evolution-tracker/README_zh.md) v1.0.0 | 追踪文档家族的版本对齐与概念谱系，自动发现版本、做块级 diff 并渲染时间线 | 标准库 |
 | | **实验运行与调度** | [`multi-dim-manager`](skills/multi-dim-manager/README_zh.md) v1.0.1 | 把参数空间笛卡尔展开成多轮独立任务，用于多个同类型任务的自动运行 | 标准库 + PyYAML（可选，用于 YAML 配置） |
+| |  | [`capstone-labmate`](https://github.com/JiamingShi-JsPhys/capstone-labmate/blob/main/README_zh.md) 参见独立仓库。 | 一个本地优先的开源 AI 技能包，帮助教师和学生处理 PASCO Capstone（.cap）实验数据——所有解析和处理均在本地运行，以保护数据隐私。 | numpy、matplotlib、pypdf |
 | | **数据分析与提取** | [`longitudinal-analysis`](skills/longitudinal-analysis/README_zh.md) v1.0.0 | 纵向统计分析流水线：描述性统计、操纵检验、线性混合模型、滞后中介与敏感性分析 | `pandas`、`numpy`、`scipy`、`statsmodels`、`openpyxl`；可选 `Rscript` + `lme4`/`lavaan` |
 | | | [`video-tracker`](skills/video-tracker/README_zh.md) v0.0.0 (beta) | 逐帧追踪实验视频中的运动目标，输出标准化运动数据：OpenCV 追踪、FFT 频谱、物理一致性探针 | `numpy`、`opencv`（headless）；可选 `matplotlib`、`pyyaml` |
 | | **质量验证与检测** | [`formula-validator`](skills/formula-validator/README_zh.md) v1.0.1 | 物理 / 数学公式的确定性校验器，对多层独立检查并输出报告 | 标准库 |
 | | | [`conflict-detector`](skills/conflict-detector/README_zh.md) v1.0.0 | 跨文档冲突检测器，提取数值 / 布尔断言与条款做分类，输出冲突报告 | 标准库 |
+| | | [`ai-trace-remover`]([`ai-trace-remover`](https://github.com/JiamingShi-JsPhys/ai-trace-remover/blob/main/README_zh.md) 参见独立仓库。 | 检测并去除中英文文本中的 AI 痕迹。在“去A化”、“拟人化”或“评分”时触发。必须运行本地扫描器进行评分并执行硬性封禁。 | 标准库 |
 
 ## 下载与安装
 

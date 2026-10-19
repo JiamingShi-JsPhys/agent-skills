@@ -29,19 +29,21 @@
 3. **Deterministic Safety**: To guard against execution hallucinations, each skill enforces verifiable, rollback-capable operations with complete audit logs.
 4. **Trigger-to-Act**: Each skill's `SKILL.md` opens with a mandatory workflow, so a matching request makes the agent *run* the tool and report the result — never answer with a description of what the tool does.
 
-## The seven skills
+## The nine skills
 
-The seven installable skills are grouped by function. Each row links to that skill's `README.md` (this table is the single place you read all of them; the linked README is the per-skill deep-dive).
+The nine installable skills are grouped by function. Each row links to that skill's `README.md` (this table is the single place you read all of them; the linked README is the per-skill deep-dive).
 
 | | Category | Skill | One-line summary | Dependencies |
 | :--- | :--- | :---: | :--- | :--- |
 | | **File & Project Management** | [`task-organizer`](skills/task-organizer/README.md) v1.0.1 | Reorganize a messy task folder into a verified three-tier structure, with a broadcast center as a context-compression index | Standard library |
 | | | [`document-evolution-tracker`](skills/document-evolution-tracker/README.md) v1.0.0 | Track version alignment and concept lineage across a document family; auto-discovers versions, block-level diffs, timeline report | Standard library |
 | | **Experiment State & Scheduling** | [`multi-dim-manager`](skills/multi-dim-manager/README.md) v1.0.1 | Cartesian-expand a parameter space into independent rounds for auto-running many same-type tasks | Standard library + PyYAML (optional, for YAML configs) |
+| |  | [`capstone-labmate`](https://github.com/JiamingShi-JsPhys/capstone-labmate) See the standalone repository.| A local-first, open-source AI skill pack that helps teachers and students work with PASCO Capstone (.cap) lab data—all parsing and processing run locally to protect data privacy. | numpy, matplotlib, pypdf |
 | | **Data Analysis & Extraction** | [`longitudinal-analysis`](skills/longitudinal-analysis/README.md) v1.0.0 | Longitudinal statistics pipeline: descriptive, manipulation check, LMM, lagged mediation, sensitivity | `pandas`, `numpy`, `scipy`, `statsmodels`, `openpyxl`; optional `Rscript` + `lme4`/`lavaan` |
 | | | [`video-tracker`](skills/video-tracker/README.md) v0.0.0 (beta) | Extracts standardized motion data from experiment videos: OpenCV tracking, FFT spectrum, physics-consistency probes | `numpy`, `opencv-contrib-python-headless`; optional `matplotlib`, `pyyaml` |
 | | **Verification & Detection** | [`formula-validator`](skills/formula-validator/README.md) v1.0.1 | Deterministic physics / math formula checker; multi-layer independent checks with a report | Standard library |
 | | | [`conflict-detector`](skills/conflict-detector/README.md) v1.0.0 | Cross-document conflict detector; extracts numeric / boolean claims and classifies clauses | Standard library |
+| |  | [`ai-trace-remover`](https://github.com/JiamingShi-JsPhys/ai-trace-remover) See the standalone repository.| Detects and removes AI traces in Chinese/English text. Triggers on "de-AI", "humanize", or "score". MUST run the local scanner for scoring and hard-bans. | Standard library |
 
 ## Download and install
 

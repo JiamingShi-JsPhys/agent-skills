@@ -40,7 +40,7 @@
 | | | [`video-tracker`](skills/video-tracker/README_zh.md) v0.0.0 (beta) | 逐帧追踪实验视频中的运动目标，输出标准化运动数据：OpenCV 追踪、FFT 频谱、物理一致性探针 | `numpy`、`opencv`（headless）；可选 `matplotlib`、`pyyaml` |
 | | **质量验证与检测** | [`formula-validator`](skills/formula-validator/README_zh.md) v1.0.1 | 物理 / 数学公式的确定性校验器，对多层独立检查并输出报告 | 标准库 |
 | | | [`conflict-detector`](skills/conflict-detector/README_zh.md) v1.0.0 | 跨文档冲突检测器，提取数值 / 布尔断言与条款做分类，输出冲突报告 | 标准库 |
-| | | [`ai-trace-remover`]([`ai-trace-remover`](https://github.com/JiamingShi-JsPhys/ai-trace-remover/blob/main/README_zh.md) 参见独立仓库。 | 检测并去除中英文文本中的 AI 痕迹。在“去A化”、“拟人化”或“评分”时触发。必须运行本地扫描器进行评分并执行硬性封禁。 | 标准库 |
+| | | [`ai-trace-remover`](https://github.com/JiamingShi-JsPhys/ai-trace-remover/blob/main/README_zh.md) 参见独立仓库。 | 检测并去除中英文文本中的 AI 痕迹。在“去A化”、“拟人化”或“评分”时触发。必须运行本地扫描器进行评分并执行硬性封禁。 | 标准库 |
 
 ## 下载与安装
 

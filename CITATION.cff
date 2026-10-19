@@ -1,0 +1,19 @@
+# agent-skills
+
+cff-version: "1.2.0"
+title: "agent-skills: a collection of self-contained skills for AI agents"
+type: software
+version: 1.0.0
+license: MIT
+date-created: 2026-10-15
+authors:
+  - family-names: "Shi"
+    given-names: "Jiaming"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+repository-code: "https://github.com/JiamingShi-JsPhys/agent-skills"
+description: "Standardized, auditable, and reliable local execution capabilities for AI Agent harnesses. Ships an auto-adaptive installer that copies each skill into the target harness's skills directory (WorkBuddy, Claude Code, Codex, DeepSeek Harness)."
+keywords:
+  - agent-skills
+  - research-automation
+  - reproducibility
+  - installable

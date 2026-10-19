@@ -1,0 +1,15 @@
+# agent-skills installer — build-only dependencies
+#
+# The installer itself is pure standard library (tkinter ships with CPython),
+# so no runtime packages are required to run `install.py`, `uninstall.py`,
+# `verify.py`, or the GUI from source. The packages below are needed ONLY
+# when packaging a standalone executable with PyInstaller (方案 C, done
+# locally by the user).
+#
+# Python >= 3.8 required (matches the skill-level dependency floor).
+
+# --- Packaging (build-only) ---
+pyinstaller>=6.0
+; Windows/macOS code signing and notarization are handled by platform
+; toolchains (signtool / codesign / notarytool), not by Python packages.
+; Icon assets for the .exe/.app go in installer/assets/ (see assets/README.md).

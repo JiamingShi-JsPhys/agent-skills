@@ -8,6 +8,8 @@
 > required — it drops straight into any agent environment that supports the
 > Skill specification.
 
+**Disclaimer**: This repository contains auxiliary tools developed by the author to automate research workflows. It is not a peer-reviewed academic project. Some boilerplate or utility scripts may have been generated with the assistance of AI, and have been integrated with high-level review and modifications by the author. The author assumes no responsibility for any third-party code issues, but commits to promptly addressing any valid claims.
+
 <!-- TOC depthFrom:2 -->
 
 - [agent-skills](#agent-skills)

@@ -12,7 +12,7 @@
 
 - [agent-skills](#agent-skills)
   - [Design principles & core features](#design-principles-&-core-features)
-  - [The seven skills](#the-seven-skills)
+  - [The nine skills](#the-nine-skills)
   - [Download and install](#download-and-install)
   - [Quick start](#quick-start)
   - [Repository layout](#repository-layout)

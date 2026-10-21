@@ -8,6 +8,9 @@
 > required — it drops straight into any agent environment that supports the
 > Skill specification.
 
+**Looking for the integrated ecosystem?**
+This repository contains standalone modules. For the full cross-platform plugin with the 4-layer deterministic orchestration architecture, please check out the integrated suite: [**Chelate Shell**](https://github.com/JiamingShi-JsPhys/chelate-shell).
+
 **Disclaimer**: This repository contains auxiliary tools developed by the author to automate research workflows. It is not a peer-reviewed academic project. Some boilerplate or utility scripts may have been generated with the assistance of AI, and have been integrated with high-level review and modifications by the author. The author assumes no responsibility for any third-party code issues, but commits to promptly addressing any valid claims.
 
 <!-- TOC depthFrom:2 -->
